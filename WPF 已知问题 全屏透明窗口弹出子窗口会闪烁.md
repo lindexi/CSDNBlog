@@ -64,6 +64,8 @@ WindowStyle="None" AllowsTransparency="True"
 
 本文代码放在 [github](https://github.com/dotnet-campus/wpf-issues/tree/4ab8bafcb1ed67a479b988aefd2bbd6f11198ec5/ChildWindowDisplayedAndThenBackToMainWindow) 欢迎小伙伴访问
 
+此问题已经报告微软，请看 [The Child window displayed behind the main window, and then the child window is displayed again in front of the main window · Issue #2761 · dotnet/wpf](https://github.com/dotnet/wpf/issues/2761 )
+
 
 
 我搭建了自己的博客 [https://blog.lindexi.com/](https://blog.lindexi.com/) 欢迎大家访问，里面有很多新的博客。只有在我看到博客写成熟之后才会放在csdn或博客园，但是一旦发布了就不再更新

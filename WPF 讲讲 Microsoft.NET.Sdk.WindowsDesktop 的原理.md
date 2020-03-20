@@ -129,6 +129,8 @@
 
 更多请看 [理解 C# 项目 csproj 文件格式的本质和编译流程 - walterlv](https://blog.walterlv.com/post/understand-the-csproj.html )
 
+[WPF迁移至WPF Core 之 生成操作](https://huchengv5.github.io/post/WPF%E8%BF%81%E7%A7%BB%E8%87%B3WPF-Core-%E4%B9%8B-%E7%94%9F%E6%88%90%E6%93%8D%E4%BD%9C.html?tdsourcetag=s_pcqq_aiomsg )
+
 
 
 我搭建了自己的博客 [https://blog.lindexi.com/](https://blog.lindexi.com/) 欢迎大家访问，里面有很多新的博客。只有在我看到博客写成熟之后才会放在csdn或博客园，但是一旦发布了就不再更新

@@ -96,6 +96,8 @@
 
 如何添加断点请看 [VisualStudio 断点调试详解](https://blog.lindexi.com/post/VisualStudio-%E6%96%AD%E7%82%B9%E8%B0%83%E8%AF%95%E8%AF%A6%E8%A7%A3.html )
 
+除了使用 OpenXML SDK 这个免费的库之外，还可以使用 [EPPlus](https://github.com/EPPlusSoftware/EPPlus ) 这个收费或 LGPL 的库
+
 
 
 我搭建了自己的博客 [https://blog.lindexi.com/](https://blog.lindexi.com/) 欢迎大家访问，里面有很多新的博客。只有在我看到博客写成熟之后才会放在csdn或博客园，但是一旦发布了就不再更新

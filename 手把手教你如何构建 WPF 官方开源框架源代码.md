@@ -168,6 +168,8 @@ build.cmd -pack -ci -configuration $(Configuration) -prepareMachine /p:Platform=
 
 原因是如果都用自己的版本，后续官方修了一些内容，将很难合并到自己的版本
 
+本文提到的 GitHub 的 Action 请看 [dotnet 部署 github 的 Action 进行持续集成](https://blog.lindexi.com/post/dotnet-%E9%83%A8%E7%BD%B2-github-%E7%9A%84-Action-%E8%BF%9B%E8%A1%8C%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90.html )
+
 
 
 我搭建了自己的博客 [https://blog.lindexi.com/](https://blog.lindexi.com/) 欢迎大家访问，里面有很多新的博客。只有在我看到博客写成熟之后才会放在csdn或博客园，但是一旦发布了就不再更新

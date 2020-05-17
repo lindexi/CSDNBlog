@@ -1,24 +1,28 @@
 
-本文告诉大家在一个连续的 commit 树中统计两个 commit 之间的差异的 commit 数量，也就是存在 A commit 存在而 B commit 不存在的 commit 的数量
+之前版本是通过安装 Blend SDK 支持 Behaviors 库的，但是这个方法都是通过引用 dll 的方式，不够优雅。在升级到 dotnet core 3.0 的时候就需要使用 WPF 官方团队开源的 Microsoft.Xaml.Behaviors.Wpf 库代替
 
 <!--more-->
 
 
-<!-- CreateTime:5/15/2020 9:00:18 AM -->
-
 <!-- 发布 -->
 
-可以使用下面代码统计两个 commit 或分支之间的差异的次数
+先通过 NuGet 安装 [Microsoft.Xaml.Behaviors.Wpf](https://www.nuget.org/packages/Microsoft.Xaml.Behaviors.Wpf) 库
+
+或者在 csproj 添加下面代码
 
 ```csharp
-git log --oneline A ^B | 
+      <PackageReference Include="Microsoft.Xaml.Behaviors.Wpf">
+          <Version>1.1.19</Version>
+      </PackageReference>
 ```
 
-这里的 A 和 B 可以替换为分支或 commit 号，如 `origin/dev` 等，下面代码统计的是 `19ef3265` 和远端的 dev 的差异数量
+将代码里面的引用 `System.Windows.Interactivity` 库的内容做替换
 
-```csharp
-git log --oneline origin/dev ^19ef3265 | wc -l
-```
+将 `xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"` 替换为 `xmlns:i="http://schemas.microsoft.com/xaml/behaviors"` 就可以了，这样就能解决找不到 `System.Windows.Interactivity` 无法构建成功
+
+
+
+[c# - How to add System.Windows.Interactivity to project? - Stack Overflow](https://stackoverflow.com/questions/8360209/how-to-add-system-windows-interactivity-to-project )
 
 
 

@@ -43,6 +43,18 @@ NAN: 00,00,00,00,00,00,F8,FF
 
 这个值不是乱存的，有标准，请看 [IEEE 754 - Wikipedia](https://en.wikipedia.org/wiki/IEEE_754 )
 
+是不是还有更简单的方法拿到某个变量的内存里面的值存放方法？试试下面代码
+
+```csharp
+double d = double.NaN;
+Span<byte> sp = new Span<byte>(&d, sizeof(double));
+```
+
+试试看下 sp 的值
+
+感谢 `（￣▽￣）` 小伙伴提供的方法
+
+
 
 我搭建了自己的博客 [https://blog.lindexi.com/](https://blog.lindexi.com/) 欢迎大家访问，里面有很多新的博客。只有在我看到博客写成熟之后才会放在csdn或博客园，但是一旦发布了就不再更新
 

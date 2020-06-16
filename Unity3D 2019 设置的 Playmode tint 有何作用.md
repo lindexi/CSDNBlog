@@ -1,26 +1,24 @@
 
-默认在 Unity3d 通过 w 的移动的时候，是根据鼠标的移动距离移动物体，此时做对齐就不好玩了。通过按下 ctrl 键盘，然后再拖动物体移动，此时就可以设置移动是固定的步频
+在 Unity3D 编辑器点击运行的时候，此时对整个面板修改的值仅在本次运行生效，当运行结束之后就会回到原来的值。因此为了避免调了半天实际上是在运行模式调的值，咱可以修改 Unity3D 编辑器的界面，让咱可以知道当前是 Unity3D 运行模式
 
 <!--more-->
 
 
-<!-- CreateTime:6/9/2020 8:18:13 AM -->
-
 <!-- 发布 -->
 
-而如何修改默认的步频？可以通过点击 edit 的 Snap Settings 打开设置面板，此时从面板里面设置各个方向的步距
+点击 Edit 的 Preferences 然后进入 Colors 界面
 
-<!-- ![](image/Unity3d 通过 Ctrl 键让移动是固定步距/Unity3d 通过 Ctrl 键让移动是固定步距0.png) -->
+此时可以看到 General 的 PlayMode tine 选项
 
-![](http://image.acmx.xyz/lindexi%2F202068221603769.jpg)
+这个选项可以选择一个颜色，这个颜色指的是 Unity3D 在运行模式时编辑器显示的主题颜色
 
-此时设置的值就是按下 ctrl 的时候移动的最小距离，也是移动的固定距离
+修改这个颜色，然后关闭 Perferences 窗口，回到 Unity3D 编辑器，尝试点击运行
 
-除了移动之外，还可以设置缩放的每次固定大小，和旋转的固定大小
+此时就可以看到编辑器的颜色都更改了，这样就比较方便解决了没有意识到当前 Unity3d 进入了运行模式
 
-<!-- 不知道怎么做的话，试试看一下 B 站的视频 https://www.bilibili.com/video/BV1xt4y1y7uk/
+如果调残了怎么办？在 Perferences 的最下方有个 Use Defaults 按钮，点击这个按钮就会还原为默认的配色
 
-<iframe src="//player.bilibili.com/player.html?bvid=BV1xt4y1y7uk&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe> -->
+有了这个还原功能，小伙伴就能随意的修改颜色
 
 
 

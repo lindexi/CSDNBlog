@@ -56,6 +56,8 @@
 
 另外，构建成功或失败都应该在首页放个图标告诉小伙伴，如何放一个构建图标请看 [Github 添加 Action 编译图标](https://blog.lindexi.com/post/Github-%E6%B7%BB%E5%8A%A0-Action-%E7%BC%96%E8%AF%91%E5%9B%BE%E6%A0%87.html )
 
+更多请看 [适合 .NET 开发者用的 GitHub Actions（时不时更新） - walterlv](https://blog.walterlv.com/post/github-actions-for-dotnet-developers.html )
+
 
 
 我搭建了自己的博客 [https://blog.lindexi.com/](https://blog.lindexi.com/) 欢迎大家访问，里面有很多新的博客。只有在我看到博客写成熟之后才会放在csdn或博客园，但是一旦发布了就不再更新

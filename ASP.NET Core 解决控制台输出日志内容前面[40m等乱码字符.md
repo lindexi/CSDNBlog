@@ -1,42 +1,39 @@
 
-著名的 HandyControl 已经支持给任意控件通过按下移动抬起事件，封装点击事件
+在默认我写了一个 WPF 程序去做管理 ASP.NET Core 进程的日志的时候，重定向输出的内容里面每一行前面都添加了很多乱码字符串。其实这是 ASP.NET Core 控制台的颜色字符，解决方法是禁用控制台颜色
 
 <!--more-->
 
 
-<!-- CreateTime:6/23/2020 10:14:02 AM -->
-
 <!-- 发布 -->
 
-在 [HandyControl](https://github.com/HandyOrg/HandyControl/pull/414) 的这个 [PR](https://github.com/HandyOrg/HandyControl/pull/414) 添加了 InputClickHelper 类，这个类提供了使用控件的按下移动抬起事件封装为点击事件
-
-使用方法：
+在看到重定向的输出里面包含以下乱码字符
 
 ```csharp
-Install-Package HandyControl
+[40m[32minfo[39m[22m[49m:
 ```
 
-给任意控件 element 附加按下移动抬起封装点击事件，下面代码的 uiElement 是一个 UIElement 控件
+或者如下乱码字符
 
 ```csharp
-HandyControl.Tools.InputClickHelper.AttachMouseDownMoveUpToClick(uiElement, UIElement_OnClicked);
-
-        private void UIElement_OnClicked(object sender, EventArgs e)
-        {
-            
-        }
+[41m[30mfail[39m[22m[49m
 ```
 
-此外，在 AttachMouseDownMoveUpToClick 方法还提供了按下过程中，用户移动鼠标或触摸触发的点击事件打断作为拖拽事件。使用方法如下
+这里 asp dotnet core 的日志内容的 `[40m[32m` 和 `[41m[30m` 字符是控制颜色的字符，可以在 Startup.cs 的 ConfigureServices 方法使用下面代码禁用控制台输出颜色
 
 ```csharp
-HandyControl.Tools.InputClickHelper.AttachMouseDownMoveUpToClick(uiElement, UIElement_OnClicked, UIElement_OnDragStarted);
-
-        private void UIElement_OnDragStarted(object sender, EventArgs e)
-        {
-            
-        }
+public void ConfigureServices(IServiceCollection services)
+{
+	services.AddLogging(builder => builder
+        .ClearProviders()
+        // 这里的颜色会被显示为 [41m[30mfail[39m[22m[49m 的内容
+        // [40m[32minfo[39m[22m[49m:
+        .AddConsole(options => { options.DisableColors = true; }));
+}
 ```
+
+注意上面代码使用 ClearProviders 清空了日志输出，上面代码禁用颜色用的是 `options.DisableColors = true;` 禁用
+
+禁用之后输出控制台没有颜色，但重定向的日志里面也没有乱码
 
 
 

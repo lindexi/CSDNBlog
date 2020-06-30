@@ -1,32 +1,42 @@
 
-使用 Thread.GetCurrentProcessorId 可以获取当前线程处理器的 Id 是哪个，而通过 Process.GetCurrentProcess().Id 可以获取当前进程的 Id 号，这两个的差别从上面描述就能看出
+我在做一个笔迹性能测试工具，想要在笔迹绘制到某个点的时候输出绘制的速度，通过判断屏幕颜色修改判断笔迹绘制到哪。此时需要在不截图屏幕获取屏幕某个点的颜色
 
 <!--more-->
 
 
-<!-- CreateTime:6/28/2020 10:25:07 AM -->
-
 <!-- 发布 -->
 
-更进一步的 Thread.GetCurrentProcessorId() 方法将会缓存处理器的 Id 因此前后两次线程如果处理器切换，此时拿到的值是不对的。在官方文档里面说了使用代码不得依赖于其正确性，因此这个值基本上只在 DUMP 使用
-
-而 Process.GetCurrentProcess().Id 是一个不需要 win32 的支持的方法，获取速度特别快，详细请看 [.NET 中 GetProcess 相关方法的性能 - walterlv](https://blog.walterlv.com/post/performance-of-get-process.html )
-
-获取速度如下
+本文的方法可以在 WinForms 等使用
 
 ```csharp
-// 100 次执行耗时
+  using System;
+  using System.Drawing;
+  using System.Runtime.InteropServices;
+  sealed class Win32
+  {
+      [DllImport("user32.dll")]
+      static extern IntPtr GetDC(IntPtr hwnd);
 
-    Process.GetProcesses()
-        00:00:00.7254688
-    Process.GetProcessById(id)
-        00:00:01.3660640（实际数值取决于当前进程数）
-    Process.GetProcessesByName("Walterlv.Demo")
-        00:00:00.5604279
-    Process.GetCurrentProcess()
-        00:00:00.0000546
+      [DllImport("user32.dll")]
+      static extern Int32 ReleaseDC(IntPtr hwnd, IntPtr hdc);
 
+      [DllImport("gdi32.dll")]
+      static extern uint GetPixel(IntPtr hdc, int nXPos, int nYPos);
+
+      static public System.Drawing.Color GetPixelColor(int x, int y)
+      {
+       IntPtr hdc = GetDC(IntPtr.Zero);
+       uint pixel = GetPixel(hdc, x, y);
+       ReleaseDC(IntPtr.Zero, hdc);
+       Color color = Color.FromArgb((int)(pixel & 0x000000FF),
+                    (int)(pixel & 0x0000FF00) >> 8,
+                    (int)(pixel & 0x00FF0000) >> 16);
+       return color;
+      }
+   }
 ```
+
+感谢[Jeremy Thompson](https://stackoverflow.com/a/62630169/6116637)的方法
 
 
 

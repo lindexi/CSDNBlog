@@ -1,44 +1,30 @@
 
-我在做一个笔迹性能测试工具，想要在笔迹绘制到某个点的时候输出绘制的速度，通过判断屏幕颜色修改判断笔迹绘制到哪。此时需要在不截图屏幕获取屏幕某个点的颜色
+本文和大家聊聊在命令行参数里面使用 json 会遇到的坑
 
 <!--more-->
 
 
-<!-- CreateTime:6/29/2020 3:02:27 PM -->
-
 <!-- 发布 -->
 
-本文的方法可以在 WinForms 等使用
+## 空格问题
 
-```csharp
-  using System;
-  using System.Drawing;
-  using System.Runtime.InteropServices;
-  sealed class Win32
-  {
-      [DllImport("user32.dll")]
-      static extern IntPtr GetDC(IntPtr hwnd);
+命令行会使用空格分割多个命令，因此 json 里面的格式存在空格时，需要做对应的替换
 
-      [DllImport("user32.dll")]
-      static extern Int32 ReleaseDC(IntPtr hwnd, IntPtr hdc);
+## 引号问题
 
-      [DllImport("gdi32.dll")]
-      static extern uint GetPixel(IntPtr hdc, int nXPos, int nYPos);
+这是最坑的问题，按照 json 格式的规则， 他的值使用引号包含。根据 [文档](https://msdn.microsoft.com/en-us/library/system.diagnostics.processstartinfo.arguments(v=vs.110).aspx) 可以了解到，需要使用三个引号作为一个引号的表示
 
-      static public System.Drawing.Color GetPixelColor(int x, int y)
-      {
-       IntPtr hdc = GetDC(IntPtr.Zero);
-       uint pixel = GetPixel(hdc, x, y);
-       ReleaseDC(IntPtr.Zero, hdc);
-       Color color = Color.FromArgb((int)(pixel & 0x000000FF),
-                    (int)(pixel & 0x0000FF00) >> 8,
-                    (int)(pixel & 0x00FF0000) >> 16);
-       return color;
-      }
-   }
-```
+## 换行问题
 
-感谢[Jeremy Thompson](https://stackoverflow.com/a/62630169/6116637)的方法
+带格式化的 json 会添加很多换行，而在命令行参数里面传换行就很好玩，请自行干掉
+
+## 字符串长度
+
+一般 json 的长度都很长，而 命令行 参数有长度要求
+
+## 解决方法
+
+尝试将 json 参数写入到本地文件，然后传本地文件路径
 
 
 

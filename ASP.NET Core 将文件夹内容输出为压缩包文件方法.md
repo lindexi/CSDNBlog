@@ -105,6 +105,8 @@ For ($i=0; $i -le 100000; $i++)
 
 如果小伙伴有更好的方法欢迎告诉我
 
+本文代码放在[github](https://github.com/lindexi/lindexi_gd/tree/32e2de954d92cc9fa359ae6eacd327405e156fe4/LarnaceakemLachonanafemhejal)欢迎小伙伴访问
+
 
 
 我搭建了自己的博客 [https://blog.lindexi.com/](https://blog.lindexi.com/) 欢迎大家访问，里面有很多新的博客。只有在我看到博客写成熟之后才会放在csdn或博客园，但是一旦发布了就不再更新

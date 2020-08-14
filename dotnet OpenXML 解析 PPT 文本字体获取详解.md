@@ -659,6 +659,8 @@ If this element is omitted, then the default fonts for each region as specified 
 
 [OOXML Hacking: Font Themes Complete - Brandwares](http://www.brandwares.com/bestpractices/2017/02/xml-hacking-font-themes-complete/ )
 
+<!-- 有关多语言和字体，请看 [github](https://github.com/lindexi/lindexi_gd/tree/094e0b6de5d341a68906c7dc9e6a3f662cca9020/HerjemhokiNeakunegar) -->
+
 
 
 我搭建了自己的博客 [https://blog.lindexi.com/](https://blog.lindexi.com/) 欢迎大家访问，里面有很多新的博客。只有在我看到博客写成熟之后才会放在csdn或博客园，但是一旦发布了就不再更新

@@ -10,6 +10,10 @@
 
 启用了Pointer之后，调用Textbox.Focus()，起不来屏幕键盘，必须点在它之上才行，触摸在它之上才行
 
+默认 Pointer 消息是使用屏幕绝对坐标而不是窗口坐标
+
+可能存在获取 Stylus 事件时触摸点不准，此时可以通过获取 Touch 代替
+
 
 我搭建了自己的博客 [https://blog.lindexi.com/](https://blog.lindexi.com/) 欢迎大家访问，里面有很多新的博客。只有在我看到博客写成熟之后才会放在csdn或博客园，但是一旦发布了就不再更新
 

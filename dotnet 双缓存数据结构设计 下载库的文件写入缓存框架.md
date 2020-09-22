@@ -390,6 +390,26 @@ private List<int> Buffer { set; get; }
     }
 ```
 
+本文的双缓存库在 GitHub 独立发布，请看 [https://github.com/dotnet-campus/AsyncWorkerCollection/](https://github.com/dotnet-campus/AsyncWorkerCollection/)  可以在 NuGet 上安装
+
+本文的 [AsyncWorkerCollection](https://github.com/dotnet-campus/AsyncWorkerCollection/) 库提供两个 NuGet 包，一个是 dll 引用，另一个是源代码引用，分别如下
+
+- dotnetCampus.AsyncWorkerCollection
+- dotnetCampus.AsyncWorkerCollection.Source
+
+如果使用 SDK 版本的 csproj 可以在项目文件使用下面代码安装源代码版本
+
+```xml
+    <ItemGroup>
+        <PackageReference Include="dotnetCampus.AsyncWorkerCollection.Source" Version="1.2.1">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+    </ItemGroup>
+```
+
+安装完成之后即可使用
+
 
 
 我搭建了自己的博客 [https://blog.lindexi.com/](https://blog.lindexi.com/) 欢迎大家访问，里面有很多新的博客。只有在我看到博客写成熟之后才会放在csdn或博客园，但是一旦发布了就不再更新

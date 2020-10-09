@@ -110,6 +110,8 @@
 </ItemGroup>
 ```
 
+详细请看 [dotnet 构建 SourceRoot items must include at least one top-level item when DeterministicSourcePaths is true 失败](https://blog.lindexi.com/post/dotnet-%E6%9E%84%E5%BB%BA-SourceRoot-items-must-include-at-least-one-top-level-item-when-DeterministicSourcePaths-is-true-%E5%A4%B1%E8%B4%A5.html )
+
 
 
 我搭建了自己的博客 [https://blog.lindexi.com/](https://blog.lindexi.com/) 欢迎大家访问，里面有很多新的博客。只有在我看到博客写成熟之后才会放在csdn或博客园，但是一旦发布了就不再更新

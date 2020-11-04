@@ -109,6 +109,17 @@
 
 - [OpenXML学习笔记（一）从Office 2007 到 Office 2010](https://www.cnblogs.com/brooks-dotnet/archive/2010/02/08/1665600.html)
 
+## 第三方工具
+
+### [Add-in Express](https://www.add-in-express.com/)
+
+很贵，很强的工具包
+
+- Office versions: Office 2019, 2016, 2013, 2010, 2007, 2003, XP and 2000
+- Applications: Outlook, Word, Excel, PowerPoint, Access, FrontPage, Publisher, Project, MapPoint, InfoPath, Visio, OneNote
+- IDEs: Visual Studio 2019, 2017, 2015, 2013, 2012 and 2010 (VB.NET, C#, C++)
+
+
 
 
 我搭建了自己的博客 [https://blog.lindexi.com/](https://blog.lindexi.com/) 欢迎大家访问，里面有很多新的博客。只有在我看到博客写成熟之后才会放在csdn或博客园，但是一旦发布了就不再更新

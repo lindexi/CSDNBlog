@@ -56,6 +56,10 @@ msbuild /p:Configuration=Release
 
 
 
+<!-- 全网首个支持 .NET 5 的 NuGet 版本 5.8 正式发布 -->
+
+
+
 我搭建了自己的博客 [https://blog.lindexi.com/](https://blog.lindexi.com/) 欢迎大家访问，里面有很多新的博客。只有在我看到博客写成熟之后才会放在csdn或博客园，但是一旦发布了就不再更新
 
 如果在博客看到有任何不懂的，欢迎交流，我搭建了 [dotnet 职业技术学院](https://t.me/dotnet_campus) 欢迎大家加入

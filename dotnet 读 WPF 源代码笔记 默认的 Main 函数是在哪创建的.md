@@ -355,6 +355,8 @@ private const string SPLASHVAR = "splashScreen";
 
 更多请看 [WPF 程序的编译过程 - walterlv](https://blog.walterlv.com/post/how-wpf-assemblies-are-compiled.html )
 
+更多关于 App.xaml 请看 [WPF教程七：通过App.xaml来了解Application类都能干什么 - 杜文龙 - 博客园](https://www.cnblogs.com/duwenlong/p/14603158.html )
+
 
 
 我搭建了自己的博客 [https://blog.lindexi.com/](https://blog.lindexi.com/) 欢迎大家访问，里面有很多新的博客。只有在我看到博客写成熟之后才会放在csdn或博客园，但是一旦发布了就不再更新

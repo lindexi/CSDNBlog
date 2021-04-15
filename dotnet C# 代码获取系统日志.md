@@ -1,24 +1,31 @@
 
-在希沃白板中，可以很方便使用学科工具里面的公式工具，在希沃白板画布中插入公式元素。本文来告诉大家如何在希沃白板的公式工具中，插入带绝对值符号的公式
+可以使用 EventLog 静态类读取或写入系统日志
 
 <!--more-->
 
 
-<!-- CreateTime:2021/4/13 9:36:59 -->
-
 <!-- 发布 -->
 
-在希沃白板的公式工具里面，默认会显示很多基础符号，但是在基础符号里面，没有绝对值符号 `|` 符号，因为这个符号可以通过键盘输入
+如下面代码可以读取本机的系统日志
 
-<!-- ![](image/希沃白板如何在公式里面输入绝对值符号/希沃白板如何在公式里面输入绝对值符号0.png) -->
+```csharp
+        static void Main(string[] args)
+        {
+            foreach (var eventLog in EventLog.GetEventLogs())
+            {
+                foreach (EventLogEntry entry in eventLog.Entries)
+                {
+                    Debug.WriteLine(entry.Message);
+                }
+            }
+        }
+```
 
-![](http://image.acmx.xyz/lindexi%2F2021413938291087.jpg)
+更多请看 [PowerShell 拿到最近的10个系统日志](https://blog.lindexi.com/post/PowerShell-%E6%8B%BF%E5%88%B0%E6%9C%80%E8%BF%91%E7%9A%8410%E4%B8%AA%E7%B3%BB%E7%BB%9F%E6%97%A5%E5%BF%97.html )
 
-在默认的标准键盘里面，可以在键盘找到 `|\` 这个按键符号，如下图。默认按下是 `\` 符号，在键盘中按住 `Shift` 键之后，按下 `|\` 这个按键，即可输入绝对值符号 `|` 符号
+本文代码放在 [github](https://github.com/lindexi/lindexi_gd/tree/8beda1f5/LejairbairwecarnelLelearnawcana) 欢迎小伙伴访问
 
-<!-- ![](image/希沃白板如何在公式里面输入绝对值符号/希沃白板如何在公式里面输入绝对值符号1.png) -->
-
-![](http://image.acmx.xyz/lindexi%2F202141394037745.jpg)
+![](http://image.acmx.xyz/lindexi%2FIMG_75762.jpg)
 
 
 

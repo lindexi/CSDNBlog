@@ -1,40 +1,24 @@
 
-在自定义 WPF 控件库时，可以看到有一些控件会加上 DefaultEventAttribute 特性，通过这个特性可以告诉 XAML 编辑器，默认创建的事件是什么
+在我的设备上，默认的 dotnet 命令行都是输出中文，如我输入 dotnet build 命令，里面的错误提示也是中文。在我想要和国外的小伙伴报坑时，如果里面有很多中文，我觉得他将会看不懂，从而不理我。本文来告诉大家如何让 dotnet 的命令行输出英文，从中文切换语言为英文
 
 <!--more-->
 
 
-<!-- CreateTime:2021/6/7 8:50:52 -->
-
-
 <!-- 发布 -->
 
-如编写一个 UserControl1 的用户自定义控件，可以在 xaml.cs 代码加上此特性
+方法需要有两步，第一步是设置环境变量，如果执行 dotnet build 命令，是在命令行里面执行，可以通过如下代码设置环境变量。通过如下代码设置，只有在这个命令行里面有用，不会影响其他应用
 
-```csharp
-    [DefaultEvent("Foo")]
-    public partial class UserControl1
-    {
-        public event EventHandler Foo;
-    }
+```
+set DOTNET_CLI_UI_LANGUAGE=en
 ```
 
-在 MainWindow 上添加 UserControl1 然后构建一下代码
+第二步是删除对应的 sdk 版本的 zh 开头的语言。如我的 sdk 是 6.0.100-preview.1.21103.13 那么我就需要去 dotnet 的安装文件夹里面删除 zh 开头的语言
 
-```csharp
-<local:UserControl1 />
+```
+删除 c:\Program Files\dotnet\sdk\6.0.100-preview.1.21103.13\ 的 zh 语言
 ```
 
-在 XAML 编辑器双击一下 UserControl1 控件，可以看到自动生成如下代码
-
-```csharp
-<local:UserControl1 Foo="UserControl1_Foo"/>
-
-        private void UserControl1_Foo(object sender, EventArgs e)
-        {
-
-        }
-```
+删除的时候需要管理员权限，我推荐只是将 zh 开头的文件夹修改命名即可，这样在切换到中文的时候，只需要修改回文件夹的命名
 
 
 

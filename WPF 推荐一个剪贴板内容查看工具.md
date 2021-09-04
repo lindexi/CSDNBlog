@@ -1,31 +1,27 @@
 
-本文来告诉大家如何使用简单的代码判断当前的软件的 UI 线程或界面是否卡顿
+本文来安利大家一个好用的 Windows 剪贴板的内容查看工具
 
 <!--more-->
 
 
 <!-- CreateTime:2021/8/23 16:49:17 -->
-
+<!-- 博客 -->
 <!-- 发布 -->
 
-在后台线程调用如下代码即可用来判断是否卡顿
+这是在 GitHub 上完全免费开源的应用，由 [walterlv](https://github.com/walterlv) 开发的应用，详细请看 [https://github.com/walterlv/ClipboardViewer](https://github.com/walterlv/ClipboardViewer)
 
-```csharp
-        private static async Task<bool> CheckDispatcherHangAsync(Dispatcher dispatcher)
-        {
-            var taskCompletionSource = new TaskCompletionSource<bool>();
-            _ = dispatcher.InvokeAsync(() => taskCompletionSource.TrySetResult(true));
-            await Task.WhenAny(taskCompletionSource.Task, Task.Delay(TimeSpan.FromSeconds(2)));
-            // 如果任务还没完成，就是界面卡了
-            return taskCompletionSource.Task.IsCompleted is false;
-        }
-```
+应用软件运行的界面如下：
 
-以上代码的 Dispatcher 可以从窗口里面获取，也可以使用 Application.Current.Dispatcher 获取。以上代码推荐在后台线程调用
+<!-- ![](image/WPF 推荐一个剪贴板内容查看工具/WPF 推荐一个剪贴板内容查看工具0.png) -->
 
-原理就是给 UI 线程一个任务，如果此任务可以在 2 秒执行完成，那么就证明 UI 不卡，否则就是证明 UI 卡了
+![](http://image.acmx.xyz/lindexi%2F202193208176858.jpg)
 
-以上方法可以放在后台线程的循环进行不断调用，但是多次调用之间需要等待一下，不然将会让 UI 线程太忙
+下载地址：
+
+- [GitHub](https://github.com/walterlv/ClipboardViewer/releases)
+- [CSDN](https://download.csdn.net/download/lindexi_gd/21911849)
+
+使用方法是点击软件的查看剪贴板内容按钮，即可在界面里面列举出剪贴板包含的内容
 
 
 

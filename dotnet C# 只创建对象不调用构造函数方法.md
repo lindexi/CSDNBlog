@@ -145,6 +145,23 @@ git remote add origin https://github.com/lindexi/lindexi_gd.git
 
 [FormatterServices.GetUninitializedObject(Type) Method (System.Runtime.Serialization)](https://docs.microsoft.com/en-us/dotnet/api/system.runtime.serialization.formatterservices.getuninitializedobject?WT.mc_id=WD-MVP-5003260)
 
+补充：
+
+在 dotnet 运行时里面，高版本的 dotnet 将可以使用 RuntimeHelpers 的 [GetUninitializedObject](https://docs.microsoft.com/zh-cn/dotnet/api/system.runtime.compilerservices.runtimehelpers.getuninitializedobject?WT.mc_id=WD-MVP-5003260) 方法代替，因为在高版本的 dotnet 里面，对 [FormatterServices.GetUninitializedObject](https://docs.microsoft.com/en-us/dotnet/api/system.runtime.serialization.formatterservices.getuninitializedobject?WT.mc_id=WD-MVP-5003260) 的实现如下
+
+```csharp
+        public static object GetUninitializedObject(
+            // This API doesn't call any constructors, but the type needs to be seen as constructed.
+            // A type is seen as constructed if a constructor is kept.
+            // This obviously won't cover a type with no constructor. Reference types with no
+            // constructor are an academic problem. Valuetypes with no constructors are a problem,
+            // but IL Linker currently treats them as always implicitly boxed.
+            [DynamicallyAccessedMembers(DynamicallyAccessedMemberTypes.PublicConstructors | DynamicallyAccessedMemberTypes.NonPublicConstructors)]
+            Type type) => RuntimeHelpers.GetUninitializedObject(type);
+```
+
+也就是说 调用 RuntimeHelpers 的 [GetUninitializedObject](https://docs.microsoft.com/zh-cn/dotnet/api/system.runtime.compilerservices.runtimehelpers.getuninitializedobject?WT.mc_id=WD-MVP-5003260) 方法和调用 [FormatterServices.GetUninitializedObject](https://docs.microsoft.com/en-us/dotnet/api/system.runtime.serialization.formatterservices.getuninitializedobject?WT.mc_id=WD-MVP-5003260) 在逻辑上是等价的
+
 
 
 我搭建了自己的博客 [https://blog.lindexi.com/](https://blog.lindexi.com/) 欢迎大家访问，里面有很多新的博客。只有在我看到博客写成熟之后才会放在csdn或博客园，但是一旦发布了就不再更新

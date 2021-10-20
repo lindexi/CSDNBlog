@@ -227,6 +227,8 @@
 
 更多渲染相关博客请看 [渲染相关](https://blog.lindexi.com/post/%E6%B8%B2%E6%9F%93 )
 
+在 WPF 框架，一开始设计是不存在 DriectWrite 的，是在 .NET Framework 3.5 之后才加入的，在 .NET Framework 4.0 发布，这里是一个[官方的引用](https://github.com/dotnet/wpf/issues/5509#issuecomment-946861616) 也在 WPF 编程宝典有讲到
+
 
 
 我搭建了自己的博客 [https://blog.lindexi.com/](https://blog.lindexi.com/) 欢迎大家访问，里面有很多新的博客。只有在我看到博客写成熟之后才会放在csdn或博客园，但是一旦发布了就不再更新

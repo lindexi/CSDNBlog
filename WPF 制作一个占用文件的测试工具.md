@@ -112,6 +112,8 @@
 
 本文代码放在 [github](https://github.com/lindexi/lindexi_gd/tree/7093026adf0907469f39ea69dc67eea10c3a6d4c/TakeUpFile) 和 [gitee](https://gitee.com/lindexi/lindexi_gd/tree/7093026adf0907469f39ea69dc67eea10c3a6d4c/TakeUpFile) 欢迎访问
 
+应用下载地址： [https://github.com/lindexi/UWP/releases/download/WordPageToImages_1.0.1/WordPageToImages-net5.0-1.0.1.zip](https://github.com/lindexi/UWP/releases/download/WordPageToImages_1.0.1/WordPageToImages-net5.0-1.0.1.zip)
+
 
 
 我搭建了自己的博客 [https://blog.lindexi.com/](https://blog.lindexi.com/) 欢迎大家访问，里面有很多新的博客。只有在我看到博客写成熟之后才会放在csdn或博客园，但是一旦发布了就不再更新

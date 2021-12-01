@@ -4,6 +4,7 @@
 <!--more-->
 
 
+<!-- CreateTime:2021/11/30 17:05:17 -->
 <!-- 发布 -->
 
 文本的段落对齐，需要设置给段落属性上，在 OpenXML SDK 里，使用 TextAlignmentTypeValues 枚举设置，如以下代码
@@ -47,7 +48,6 @@ using A = DocumentFormat.OpenXml.Drawing;
 两端对齐，在 OpenXML 文档里面写入的字符串是 `just` 的值。运行效果如下：
 
 <!-- ![](image/dotnet OpenXML 聊聊文本段落对齐方式/dotnet OpenXML 聊聊文本段落对齐方式0.png) -->
-
 ![](http://image.acmx.xyz/lindexi%2F202111301711449694.jpg)
 
 两端对齐相对来说比较复杂
@@ -57,7 +57,6 @@ using A = DocumentFormat.OpenXml.Drawing;
 两端对齐，和 Justified 的不同在于，这是为阿拉伯语特别做的，对应字符串是 `justLow` 的值。 运行效果如下：
 
 <!-- ![](image/dotnet OpenXML 聊聊文本段落对齐方式/dotnet OpenXML 聊聊文本段落对齐方式4.png) -->
-
 ![](http://image.acmx.xyz/lindexi%2F202111301715352502.jpg)
 
 在 ECMA 376 的定义如下
@@ -83,7 +82,6 @@ using A = DocumentFormat.OpenXml.Drawing;
 左对齐，对应字符串是 `l` 的值。运行效果如下：
 
 <!-- ![](image/dotnet OpenXML 聊聊文本段落对齐方式/dotnet OpenXML 聊聊文本段落对齐方式1.png) -->
-
 ![](http://image.acmx.xyz/lindexi%2F202111301712178564.jpg)
 
 ## Center
@@ -92,7 +90,6 @@ using A = DocumentFormat.OpenXml.Drawing;
 
 
 <!-- ![](image/dotnet OpenXML 聊聊文本段落对齐方式/dotnet OpenXML 聊聊文本段落对齐方式2.png) -->
-
 ![](http://image.acmx.xyz/lindexi%2F202111301713237091.jpg)
 
 ## Right
@@ -100,7 +97,6 @@ using A = DocumentFormat.OpenXml.Drawing;
 右对齐，对应字符串是 `r` 的值。运行效果如下：
 
 <!-- ![](image/dotnet OpenXML 聊聊文本段落对齐方式/dotnet OpenXML 聊聊文本段落对齐方式5.png) -->
-
 ![](http://image.acmx.xyz/lindexi%2F202111301716228874.jpg)
 
 ## Distributed
@@ -108,7 +104,6 @@ using A = DocumentFormat.OpenXml.Drawing;
 分散对齐，对应字符串是 `dist` 的值。运行效果如下：
 
 <!-- ![](image/dotnet OpenXML 聊聊文本段落对齐方式/dotnet OpenXML 聊聊文本段落对齐方式3.png) -->
-
 ![](http://image.acmx.xyz/lindexi%2F202111301714396582.jpg)
 
 和两端对齐的不同，请参阅本文的参考文档
@@ -120,7 +115,6 @@ using A = DocumentFormat.OpenXml.Drawing;
 Distributes Thai text specially, because each character is treated as a word.
 
 <!-- ![](image/dotnet OpenXML 聊聊文本段落对齐方式/dotnet OpenXML 聊聊文本段落对齐方式6.png) -->
-
 ![](http://image.acmx.xyz/lindexi%2F202111301717268723.jpg)
 
 ## 代码
@@ -144,6 +138,8 @@ git remote add origin https://github.com/lindexi/lindexi_gd.git
 
 获取代码之后，进入 Pptx 文件夹
 
+在 WPF 里面，可以参考 [TextBlock.TextAlignment Property (System.Windows.Controls)](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.textblock.textalignment?WT.mc_id=WD-MVP-5003260 ) 实现文本对齐
+
 ## 参考
 
   - [对齐文本](https://helpx.adobe.com/cn/incopy/using/aligning-text.html )
@@ -153,6 +149,8 @@ git remote add origin https://github.com/lindexi/lindexi_gd.git
   - [office2016Word文档字数不同段落如何两端都对齐-百度经验](https://jingyan.baidu.com/article/454316ab334fdef7a7c03a82.html )
   - [Word文档左右两端对齐有什么用，怎么调整](https://baijiahao.baidu.com/s?id=1704092411488760371&wfr=spider&for=pc )
   - [TextAlignmentTypeValues 枚举 (DocumentFormat.OpenXml.Drawing)](https://docs.microsoft.com/zh-cn/dotnet/api/documentformat.openxml.drawing.textalignmenttypevalues?view=openxml-2.8.1 )
+
+更多请看 [Office 使用 OpenXML SDK 解析文档博客目录](https://blog.lindexi.com/post/Office-%E4%BD%BF%E7%94%A8-OpenXML-SDK-%E8%A7%A3%E6%9E%90%E6%96%87%E6%A1%A3%E5%8D%9A%E5%AE%A2%E7%9B%AE%E5%BD%95.html )
 
 
 

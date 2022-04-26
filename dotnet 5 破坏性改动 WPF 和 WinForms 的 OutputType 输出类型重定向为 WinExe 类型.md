@@ -27,6 +27,8 @@
 
 更多细节请看官方文档 [Breaking change: OutputType set to WinExe for WPF and WinForms apps](https://docs.microsoft.com/en-us/dotnet/core/compatibility/windows-forms/5.0/automatically-infer-winexe-output-type?WT.mc_id=WD-MVP-5003260)
 
+至于 OutputType 是 Exe 还是 WinExe 类型的更多细节，请参阅 [dotnet core 通过修改文件头的方式隐藏控制台窗口](https://blog.lindexi.com/post/dotnet-core-%E9%80%9A%E8%BF%87%E4%BF%AE%E6%94%B9%E6%96%87%E4%BB%B6%E5%A4%B4%E7%9A%84%E6%96%B9%E5%BC%8F%E9%9A%90%E8%97%8F%E6%8E%A7%E5%88%B6%E5%8F%B0%E7%AA%97%E5%8F%A3.html)
+ 
 
 
 我搭建了自己的博客 [https://blog.lindexi.com/](https://blog.lindexi.com/) 欢迎大家访问，里面有很多新的博客。只有在我看到博客写成熟之后才会放在csdn或博客园，但是一旦发布了就不再更新

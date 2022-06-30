@@ -58,6 +58,8 @@ git pull origin 668b2acf5749a1e190733882ae49ad105877cb55
 
 我建立了一个 SkiaSharp 的群： 788018852 欢迎大家加入讨论
 
+更多请看 [Docker环境下使用SkiaSharp的2种方式 - 从零开始-DotNET技术 - 博客园](https://www.cnblogs.com/yycelsu/p/14048859.html )
+
 
 我搭建了自己的博客 [https://blog.lindexi.com/](https://blog.lindexi.com/) 欢迎大家访问，里面有很多新的博客。只有在我看到博客写成熟之后才会放在csdn或博客园，但是一旦发布了就不再更新
 

@@ -117,6 +117,8 @@ git remote add origin https://github.com/lindexi/lindexi_gd.git
 
 获取代码之后，进入 HejawrawceaJurheakelerela 文件夹
 
+在 Microsoft.Maui.Graphics 基础上创建的 Microsoft.Maui.Graphics.Controls 仓库，此 Microsoft.Maui.Graphics.Controls 将采用 Microsoft.Maui.Graphics 进行完全的自绘，详细请看 [MAUI中使用Maui.Graphics.Controls绘制控件 - 痕迹g - 博客园](https://www.cnblogs.com/zh7791/p/15594282.html )
+
 
 
 我搭建了自己的博客 [https://blog.lindexi.com/](https://blog.lindexi.com/) 欢迎大家访问，里面有很多新的博客。只有在我看到博客写成熟之后才会放在csdn或博客园，但是一旦发布了就不再更新

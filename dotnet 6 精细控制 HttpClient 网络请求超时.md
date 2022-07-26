@@ -4,6 +4,8 @@
 <!--more-->
 
 
+<!-- CreateTime:2022/7/25 8:28:00 -->
+
 <!-- 发布 -->
 <!-- 博客 -->
 
@@ -66,8 +68,6 @@
 
 另外，这里的 ConnectCallback 也如上文描述，由于 HttpClient 将会尽可能复用连接，不一定每次请求都会进来，建议不要将配置作为动态配置，想要根据业务动态决定超时时间是不靠谱的行为，这里应该是初始化过程，给定准确的值
 
-
-
 回顾一下，控制网络总超时，使用 HttpClient 自带的 Timeout 属性
 
 控制网络的连接超时，使用 SocketsHttpHandler 的 ConnectTimeout 属性
@@ -75,6 +75,8 @@
 控制网络的请求超时，使用 Socket 的 SendTimeout 属性
 
 控制网络的响应超时，使用 Socket 的 ReceiveTimeout 属性
+
+更多请参阅 [dotnet 6 使用 HttpClient 的超时机制](https://blog.lindexi.com/post/dotnet-6-%E4%BD%BF%E7%94%A8-HttpClient-%E7%9A%84%E8%B6%85%E6%97%B6%E6%9C%BA%E5%88%B6.html )
 
 
 我搭建了自己的博客 [https://blog.lindexi.com/](https://blog.lindexi.com/) 欢迎大家访问，里面有很多新的博客。只有在我看到博客写成熟之后才会放在csdn或博客园，但是一旦发布了就不再更新

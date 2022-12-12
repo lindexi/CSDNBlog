@@ -219,6 +219,8 @@ class 哲学书籍管理 : 书籍管理基类
 
 更多代码编写相关博客，请参阅我的 [博客导航](https://blog.lindexi.com/post/%E5%8D%9A%E5%AE%A2%E5%AF%BC%E8%88%AA.html )
 
+特别感谢 [小方](https://github.com/RafaelLxf) 帮忙改正
+
 
 我搭建了自己的博客 [https://blog.lindexi.com/](https://blog.lindexi.com/) 欢迎大家访问，里面有很多新的博客。只有在我看到博客写成熟之后才会放在csdn或博客园，但是一旦发布了就不再更新
 

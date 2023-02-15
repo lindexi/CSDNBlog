@@ -4,6 +4,8 @@
 <!--more-->
 
 
+<!-- CreateTime:2023/2/13 20:10:03 -->
+
 <!-- 发布 -->
 <!-- 博客 -->
 
@@ -209,6 +211,15 @@ Unable to read dynamic function table entries
 47 00000072`d677f9e0 00007ffe`5fe626a1 KERNEL32!BaseThreadInitThunk+0x14
 48 00000072`d677fa10 00000000`00000000 ntdll!RtlUserThreadStart+0x21
 ```
+
+以上的堆栈十分明确，就是从 PresentationFramework 里触发加载的，核心堆栈如下
+
+```
+24 00000072`d677d1d0 00007ffe`3342ebf6 PresentationFramework!System.Windows.Application::ApplicationInit+0x3b
+25 00000072`d677d210 00007ffe`34dbae93 PresentationFramework!System.Windows.Application::.cctor+0x66
+```
+
+拿到了调用堆栈，依然是需要进行一些业务端的分析，才能了解到具体是哪个模块加载
 
 
 我搭建了自己的博客 [https://blog.lindexi.com/](https://blog.lindexi.com/) 欢迎大家访问，里面有很多新的博客。只有在我看到博客写成熟之后才会放在csdn或博客园，但是一旦发布了就不再更新

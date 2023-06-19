@@ -4,6 +4,8 @@
 <!--more-->
 
 
+<!-- CreateTime:2023/6/19 8:39:59 -->
+
 <!-- 发布 -->
 <!-- 博客 -->
 <!-- 标签：Roslyn,MSBuild,编译器,SourceGenerator,生成代码 -->
@@ -263,6 +265,8 @@ public class FooTelescopeIncrementalGenerator : IIncrementalGenerator
 
 以上拿到的 `allTypeSymbol` 就是引用的 Lib 程序集里面的所有类型。为了测试咱的分析器代码是否正确，可以尝试将收集到的 Lib 程序集里面的所有类型的记录输出作为一个源代码生成
 
+{% raw %}
+
 ```csharp
     public void Initialize(IncrementalGeneratorInitializationContext context)
     {
@@ -314,6 +318,8 @@ public class FooTelescopeIncrementalGenerator : IIncrementalGenerator
         });
     }
 ```
+
+{% endraw %}
 
 如以上代码就在代码生成器里面生成了名为 FooHelper 的类型，这个类型将会返回 Lib 程序集里面的所有的类型
 

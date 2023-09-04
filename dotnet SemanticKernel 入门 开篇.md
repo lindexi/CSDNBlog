@@ -19,6 +19,18 @@
 
 我创建了 SemanticKernel 群: 623349574 欢迎大家加入交流
 
+## 应用例子
+
+- [使用Skonsole自动生成Git提交信息 - 宵伯特 - 博客园](https://www.cnblogs.com/xbotter/p/skonsole_intro.html)
+
+## 收藏的博客
+
+以下是我收藏的网上大佬们写的博客：
+
+- [Semantic Kernel 入门系列 ❤️‍🔥 - 宵伯特 - 博客园](https://www.cnblogs.com/xbotter/p/semantic_kernel_introduction.html )
+
+- [Semantic Kernel 知多少 开启面向AI编程新篇章 - 哔哩哔哩](https://www.bilibili.com/read/cv22899046/ )
+
 
 我搭建了自己的博客 [https://blog.lindexi.com/](https://blog.lindexi.com/) 欢迎大家访问，里面有很多新的博客。只有在我看到博客写成熟之后才会放在csdn或博客园，但是一旦发布了就不再更新
 

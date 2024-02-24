@@ -99,6 +99,8 @@ git pull origin f91082b406f3ac1e1a89c536263fd62c7d99be47
 
 获取代码之后，进入 LacebayjeejiBehebilawla 文件夹
 
+如需设置进入全屏，请参阅 [UNO 设置平台进入全屏窗口模式的方法](https://blog.lindexi.com/post/UNO-%E8%AE%BE%E7%BD%AE%E5%B9%B3%E5%8F%B0%E8%BF%9B%E5%85%A5%E5%85%A8%E5%B1%8F%E7%AA%97%E5%8F%A3%E6%A8%A1%E5%BC%8F%E7%9A%84%E6%96%B9%E6%B3%95.html )
+
 
 我搭建了自己的博客 [https://blog.lindexi.com/](https://blog.lindexi.com/) 欢迎大家访问，里面有很多新的博客。只有在我看到博客写成熟之后才会放在csdn或博客园，但是一旦发布了就不再更新
 

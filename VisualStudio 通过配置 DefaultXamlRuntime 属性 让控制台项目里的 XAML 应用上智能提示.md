@@ -4,6 +4,8 @@
 <!--more-->
 
 
+<!-- CreateTime:2024/2/24 15:33:28 -->
+
 <!-- 发布 -->
 <!-- 博客 -->
 
@@ -169,6 +171,11 @@ git pull origin a68446eac510fa6a80757abafde4c2bffd963cda
 ```
 
 获取代码之后，进入 BellikarjeHakurheekall 文件夹，即可获取到源代码
+
+更多请参阅：
+
+- [Add globbing support for WinUI · Issue #3245 · dotnet/wpf](https://github.com/dotnet/wpf/issues/3245 )
+- [adding XamlRuntime msbuild property/metadata by stevenbrix · Pull Request #3332 · dotnet/wpf](https://github.com/dotnet/wpf/pull/3332 )
 
 
 我搭建了自己的博客 [https://blog.lindexi.com/](https://blog.lindexi.com/) 欢迎大家访问，里面有很多新的博客。只有在我看到博客写成熟之后才会放在csdn或博客园，但是一旦发布了就不再更新

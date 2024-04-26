@@ -125,6 +125,8 @@ git pull origin 0f8939a9c1ac51266ba472730bf6e4ccd22c34b5
 
 获取代码之后，进入 BehairracercairJifelalihay 文件夹，即可获取到源代码
 
+更多 Linux 和国产系统的开发相关博客，请参阅 [博客导航](https://blog.lindexi.com/post/%E5%8D%9A%E5%AE%A2%E5%AF%BC%E8%88%AA.html )
+
 
 我搭建了自己的博客 [https://blog.lindexi.com/](https://blog.lindexi.com/) 欢迎大家访问，里面有很多新的博客。只有在我看到博客写成熟之后才会放在csdn或博客园，但是一旦发布了就不再更新
 

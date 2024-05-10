@@ -377,6 +377,8 @@ git pull origin 43711cd55b54616e0d75a70d61dec5591151ad2b
 - <https://www.kernel.org/doc/html/latest/input/multi-touch-protocol.html>
 - <https://source.android.google.cn/docs/core/interaction/input/touch-devices>
 
+对应的，我修复了 Avalonia 的触摸问题，详细请参阅 <https://github.com/AvaloniaUI/Avalonia/pull/15297> <https://github.com/AvaloniaUI/Avalonia/pull/15283>
+
 
 我搭建了自己的博客 [https://blog.lindexi.com/](https://blog.lindexi.com/) 欢迎大家访问，里面有很多新的博客。只有在我看到博客写成熟之后才会放在csdn或博客园，但是一旦发布了就不再更新
 

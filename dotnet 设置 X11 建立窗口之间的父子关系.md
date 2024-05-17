@@ -4,6 +4,8 @@
 <!--more-->
 
 
+<!-- CreateTime:2024/05/17 07:23:22 -->
+
 <!-- 发布 -->
 <!-- 博客 -->
 
@@ -511,6 +513,8 @@ git pull origin bd9f8b2c8f3f42bea639677bf4ac69602b521fc0
 ```
 
 获取代码之后，进入 DikalehebeekaJaqunicobo 文件夹，即可获取到源代码
+
+更多 X11 相关，请参阅 [博客导航](https://blog.lindexi.com/post/%E5%8D%9A%E5%AE%A2%E5%AF%BC%E8%88%AA.html )
 
 
 我搭建了自己的博客 [https://blog.lindexi.com/](https://blog.lindexi.com/) 欢迎大家访问，里面有很多新的博客。只有在我看到博客写成熟之后才会放在csdn或博客园，但是一旦发布了就不再更新

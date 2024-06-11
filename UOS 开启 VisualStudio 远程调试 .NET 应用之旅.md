@@ -214,6 +214,12 @@ mkdir .vs-debugger
 详细请参阅 [SyncTool 开源项目](https://github.com/dotnet-campus/dotnetcampus.DotNETBuildSDK)
 
 
+## 参考博客
+
+[VisualStudio 如何 SSH 远程调试 Linux 的 dotnet 应用的启动](https://blog.lindexi.com/post/VisualStudio-%E5%A6%82%E4%BD%95-SSH-%E8%BF%9C%E7%A8%8B%E8%B0%83%E8%AF%95-Linux-%E7%9A%84-dotnet-%E5%BA%94%E7%94%A8%E7%9A%84%E5%90%AF%E5%8A%A8.html )
+<!-- [VisualStudio 如何 SSH 远程调试 Linux 的 dotnet 应用的启动 - lindexi - 博客园](https://www.cnblogs.com/lindexi/p/18238164 ) -->
+
+
 我搭建了自己的博客 [https://blog.lindexi.com/](https://blog.lindexi.com/) 欢迎大家访问，里面有很多新的博客。只有在我看到博客写成熟之后才会放在csdn或博客园，但是一旦发布了就不再更新
 
 如果在博客看到有任何不懂的，欢迎交流，我搭建了 [dotnet 职业技术学院](https://t.me/dotnet_campus) 欢迎大家加入

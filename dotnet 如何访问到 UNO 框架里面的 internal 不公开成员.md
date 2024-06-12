@@ -4,6 +4,8 @@
 <!--more-->
 
 
+<!-- CreateTime:2024/06/12 07:09:12 -->
+
 <!-- 发布 -->
 <!-- 博客 -->
 
@@ -158,6 +160,8 @@ git pull origin 5a2adba87164ab5c2de480cb4f04a8e28bb28bce
 
 获取代码之后，进入 UnoDemo/UnoSkiaWeelelqairjiwarfekemGahinabai 文件夹，即可获取到源代码
 
+由 new bing 翻译的英文版本：[Accessing Internal Members in the UNO Framework](https://blog.lindexi.com/post/Accessing-Internal-Members-in-the-UNO-Framework.html )
+<!-- [Accessing Internal Members in the UNO Framework - lindexi - 博客园](https://www.cnblogs.com/lindexi/p/18243187 ) -->
 
 
 我搭建了自己的博客 [https://blog.lindexi.com/](https://blog.lindexi.com/) 欢迎大家访问，里面有很多新的博客。只有在我看到博客写成熟之后才会放在csdn或博客园，但是一旦发布了就不再更新

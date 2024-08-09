@@ -71,6 +71,7 @@ internal class Program
 参考文档：
 
 - [OpenKylin上运行Avalonia应用 - louzi - 博客园](https://www.cnblogs.com/louzixl/p/17631717.html )
+- <https://github.com/AvaloniaUI/Avalonia/issues/16612>
 
 
 我搭建了自己的博客 [https://blog.lindexi.com/](https://blog.lindexi.com/) 欢迎大家访问，里面有很多新的博客。只有在我看到博客写成熟之后才会放在csdn或博客园，但是一旦发布了就不再更新

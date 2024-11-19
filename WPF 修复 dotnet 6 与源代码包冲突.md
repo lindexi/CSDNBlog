@@ -51,6 +51,8 @@ C:\Program Files\dotnet\sdk\6.0.101\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET
 
 如果不想加上 IncludePackageReferencesDuringMarkupCompilation 也修复问题，那就需要去修复源代码包了
 
+禁用 IncludePackageReferencesDuringMarkupCompilation 功能将会在升级到 dotnet 9 sdk 之后，出现了另一个方向的兼容性问题
+
 
 我搭建了自己的博客 [https://blog.lindexi.com/](https://blog.lindexi.com/) 欢迎大家访问，里面有很多新的博客。只有在我看到博客写成熟之后才会放在csdn或博客园，但是一旦发布了就不再更新
 

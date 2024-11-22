@@ -344,7 +344,7 @@ dotnet dpkg-debuos -b C:\lindexi\DebPacking -o C:\lindexi\UOS\Foo.deb
   </PropertyGroup>
 ```
 
-由于 LibVLCSharp 难以维护 Linux 复杂的 VLC 版本，因此软件带 VLC 是推荐声明依赖。声明依赖之后，将在安装 deb 安装包的时候要求依赖负载。如使用 dpkg 命令，则在缺失依赖时不给安装，且给出其依赖说明。如使用图形界面的安装器，比如麒麟系统的 kylin-installer 安装器，一般都会自动从软件包源安装依赖
+由于 LibVLCSharp 难以维护 Linux 复杂的 VLC 版本，因此软件带 VLC 的方式是推荐使用声明依赖的方式。声明依赖之后，将在安装 deb 安装包的时候要求依赖负载。如使用 dpkg 命令，则在缺失依赖时不给安装，且给出其依赖说明。如使用图形界面的安装器，比如麒麟系统的 kylin-installer 安装器，一般都会自动从软件包源安装依赖
 
 
 我搭建了自己的博客 [https://blog.lindexi.com/](https://blog.lindexi.com/) 欢迎大家访问，里面有很多新的博客。只有在我看到博客写成熟之后才会放在csdn或博客园，但是一旦发布了就不再更新

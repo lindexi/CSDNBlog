@@ -27,6 +27,10 @@
 - <https://github.com/dotnet-campus/dotnetCampus.Logger/pull/29>
 - <https://github.com/dotnet-campus/dotnetCampus.Ipc/pull/156>
 
+## 修复源代码包
+
+- <https://github.com/dotnet-campus/DocumentFormat.OpenXml.Extensions/pull/46>
+
 
 我搭建了自己的博客 [https://blog.lindexi.com/](https://blog.lindexi.com/) 欢迎大家访问，里面有很多新的博客。只有在我看到博客写成熟之后才会放在csdn或博客园，但是一旦发布了就不再更新
 

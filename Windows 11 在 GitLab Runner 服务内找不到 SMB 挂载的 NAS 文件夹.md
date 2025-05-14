@@ -4,7 +4,7 @@
 <!--more-->
 
 
-<!-- CreateTime:2025/04/16 07:23:58 -->
+<!-- CreateTime:2025/04/16 07:23:59 -->
 
 <!-- 发布 -->
 <!-- 博客 -->
@@ -74,6 +74,36 @@ New-SmbMapping : 本地设备名已在使用中。
 ```
 
 执行完成 New-SmbMapping 命令之后，重新在 GitLab Runner 服务调度启动的进程里面，使用 `Directory.Exists(@"Y:\")` 这句代码时，可以正常返回文件夹存在，问题解决
+
+---
+
+有伙伴和我反馈说调用 `powershell New-SmbMapping -LocalPath Y: -RemotePath \\nas.lindexi.com\Data -Persistent $True` 时，出现了以下错误信息
+
+```
+New-SmbMapping : Cannot process argument transformation on parameter 'Persistent'. Cannot convert value "System.String"
+ to type "System.Boolean". Boolean parameters accept only Boolean values and numbers, such as $True, $False, 1 or 0.
+At line:1 char:78
+```
+
+也不知道是哪里挂了，核心说的是将 `$True` 识别为 System.String 字符串了
+
+解决方法就是将 `$True` 改成 1 就好了，修改之后的命令如下
+
+```
+powershell New-SmbMapping -LocalPath Y: -RemotePath \\nas.lindexi.com\Data -Persistent 1
+```
+
+修改之后的 `.gitlab-ci.yml` 文件内容大概如下
+
+```yml
+stages:
+  - build
+
+Build:
+    stage: build
+    script:
+        - 'powershell New-SmbMapping -LocalPath Y: -RemotePath \\nas.lindexi.com\Data -Persistent 1'
+```
 
 
 我搭建了自己的博客 [https://blog.lindexi.com/](https://blog.lindexi.com/) 欢迎大家访问，里面有很多新的博客。只有在我看到博客写成熟之后才会放在csdn或博客园，但是一旦发布了就不再更新

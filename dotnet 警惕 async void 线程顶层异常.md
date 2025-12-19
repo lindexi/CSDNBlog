@@ -55,6 +55,14 @@ FooEvent += async (s, e) =>
 
 我依然认为 async void 线程顶层异常无法统一处理导致进程退出是 dotnet 的基础设计缺陷
 
+在 ReShaprer 里面有明确的提示，详细请看： <https://www.jetbrains.com/help/inspectopedia/AsyncVoidMethod.html>
+
+提示内容如下
+
+```
+Any exceptions unhandled by the 'async void' method might lead to the process crash
+```
+
 
 我搭建了自己的博客 [https://blog.lindexi.com/](https://blog.lindexi.com/) 欢迎大家访问，里面有很多新的博客。只有在我看到博客写成熟之后才会放在csdn或博客园，但是一旦发布了就不再更新
 

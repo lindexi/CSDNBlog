@@ -267,6 +267,9 @@ class Program
 }
 ```
 
+更多无头模式用法请参阅： [Avalonia 无头模式在 Docker 容器中的运行方法](https://blog.lindexi.com/post/Avalonia-%E6%97%A0%E5%A4%B4%E6%A8%A1%E5%BC%8F%E5%9C%A8-Docker-%E5%AE%B9%E5%99%A8%E4%B8%AD%E7%9A%84%E8%BF%90%E8%A1%8C%E6%96%B9%E6%B3%95.html )
+<!-- [Avalonia 无头模式在 Docker 容器中的运行方法 - lindexi - 博客园](https://www.cnblogs.com/lindexi/p/19955703 ) -->
+
 
 我搭建了自己的博客 [https://blog.lindexi.com/](https://blog.lindexi.com/) 欢迎大家访问，里面有很多新的博客。只有在我看到博客写成熟之后才会放在csdn或博客园，但是一旦发布了就不再更新
 
